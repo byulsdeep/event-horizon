@@ -66,7 +66,9 @@ export default function Chat() {
     };
 
     const getImageUrl = (fileId) => {
-        return storage.getFilePreview(BUCKET_ID, fileId);
+        // return storage.getFilePreview(BUCKET_ID, fileId); 
+        // {"message":"Image transformations are blocked on your current plan. Please upgrade to a higher plan. ","code":403,"type":"storage_image_transformations_blocked","version":"1.8.0"}
+        return storage.getFileView(BUCKET_ID, fileId); 
     };
 
     return (
