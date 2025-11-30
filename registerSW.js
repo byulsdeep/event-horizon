@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/event-horizon-frontend/sw.js', { scope: '/event-horizon-frontend/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/event-horizon/sw.js', { scope: '/event-horizon/' })})}
