@@ -1,7 +1,7 @@
 {
   "name": "event-horizon",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://byulsdeep.github.io/event-horizon",
   "type": "module",
   "scripts": {
