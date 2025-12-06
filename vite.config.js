@@ -1,28 +1,32 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { VitePWA } from 'vite-plugin-pwa'
+import { VitePWA } from 'vite-plugin-pwa' // Keep PWA
 
-// https://vite.dev/config/
 export default defineConfig({
   base: '/event-horizon/', 
   plugins: [
     react(),
-    tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['event-horizon.svg'],
       manifest: {
         name: 'Event Horizon',
         short_name: 'Horizon',
-        description: 'Private Chat App',
-        theme_color: '#ffffff',
-        display: 'standalone', // Makes it look like an app on mobile
-        start_url: '/event-horizon',
-        scope: '/event-horizon',
+        description: 'Private Real-time Comms',
+        theme_color: '#000000',
+        background_color: '#000000',
+        display: 'standalone',
+        start_url: '/event-horizon/',
+        scope: '/event-horizon/',
         icons: [
           {
-            src: 'pwa-192x192.png', // You can add these icons to /public later
+            src: 'pwa-192x192.png',
             sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
             type: 'image/png'
           }
         ]

@@ -5,6 +5,7 @@ export const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 export const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 export const BUCKET_ID = import.meta.env.VITE_APPWRITE_BUCKET_ID;
 export const ADMIN_USER_ID = import.meta.env.VITE_APPWRITE_ADMIN_USER_ID;
+export const APP_VERSION = import.meta.env.VITE_APPWRITE_APP_VERSION;
 
 const client = new Client()
     .setEndpoint(import.meta.env.VITE_APPWRITE_ENDPOINT)
